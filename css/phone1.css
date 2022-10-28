@@ -1,0 +1,82 @@
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 3px 0px;
+}
+
+#logo h1 {
+    height: 30px;
+    margin: 3px 6px;
+    color: white;
+    /* border: 1px solid white; */
+    /* border-width: 3px; */
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    font-family: 'Bree Serif', serif;
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 0.9rem;
+
+
+
+}
+
+#navbar ul li a {
+
+    text-align: right;
+    color: rgb(255, 253, 253);
+    display: block;
+    padding: 3px 15px;
+    /* border-radius: 20px; */
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(255, 254, 254);
+    /* background-color: white; */
+    transform: scale(1.2);
+}
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('..//img/Home-bg.jpg') no-repeat center center/cover;
+    height: 236px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
